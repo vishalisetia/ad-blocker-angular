@@ -1,0 +1,7 @@
+<div [@shakeit]="this.states['state1']" (click)="shakeMe('state1')" (@shakeit.done)="shakeEnd('state1', $event)" *ngIf="isBlocked && showContent" class="text block">
+    Ad Blocker is on
+</div>
+
+<div [@shakeit]="this.states['state1']" (click)="shakeMe('state1')" (@shakeit.done)="shakeEnd('state1', $event)" *ngIf="!isBlocked" class="text not-block">
+    Ad Blocker is off
+</div>
